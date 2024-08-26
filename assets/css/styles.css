@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+
+section {
+  min-height: 100vh;
+  padding-top: 4rem; 
+}
+
+h1.under{
+  text-decoration: underline;
+}
+
+h2.under{
+  text-decoration: underline;
+}
+
+article {
+  padding-inline: 4rem;
+}
+
+#introduccion {
+  background-image: url(/assets/img/portafolio\ inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: justify;
+  
+}
+
+#introduccion h1{
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#experiencias {
+  background-image: url(/assets/img/experiencias.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#proyectos {
+  background-image: url(/assets/img/proyecto\ fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-item img {
+  margin: auto;
+  max-width: 100vh;
+  height: 50vh;
+  border-radius: 20px;
+  border: gold solid 10px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #e9ec05; 
+  text-shadow: 1px 1px 2px rgb(8, 8, 3), 
+  0 0 25px rgba(255, 255, 255, 0.6); 
+}
+
+#contactame {
+  background-image: url(/assets/img/contactame.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#form-messages {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  article {
+    padding-inline: 2rem;
+  }
+
+  #introduccion h1 {
+    font-size: 1.5rem;
+  }
+
+  #experiencias, #proyectos, #contactame {
+    background-size: contain;
+  }
+
+  .carousel-item img {
+    max-height: 40vh;
+  }
+
+  #form-messages {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  section {
+    padding-top: 2rem;
+  }
+
+  article {
+    padding-inline: 1rem;
+  }
+
+  #introduccion h1 {
+    font-size: 1.2rem;
+  }
+
+  #introduccion, #experiencias, #proyectos, #contactame {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-item img {
+    max-height: 30vh;
+  }
+
+  #form-messages {
+    font-size: 0.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+
